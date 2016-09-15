@@ -2,7 +2,208 @@
 @{
     ViewBag.Title = "Tools";
 }
+<script src="~/Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+@*<link rel="stylesheet" href="~/Content/w3.css">*@
+<style>
+    /*.city {
+        display: none;
+    }*/
 
-<div>
-    <iframe src="http://172.24.119.199/" width="100%" height="720"></iframe>
+
+    th {
+        background-color: #66ccff;
+    }
+
+    .w3-container {
+        padding: 0.01em 16px;
+    }
+
+    .w3-light-grey, .w3-hover-light-grey:hover {
+        color: #000 !important;
+        background-color: #f1f1f1 !important;
+    }
+
+    .w3-red, .w3-hover-red:hover {
+        color: #fff !important;
+        background-color: #f44336 !important;
+    }
+
+    .w3-sidenav {
+        height: 100%;
+        width: 200px;
+        background-color: #fff;
+        position: fixed !important;
+        z-index: 1;
+        overflow: auto;
+    }
+
+        .w3-sidenav a {
+            padding: 4px 2px 4px 16px;
+        }
+
+            .w3-sidenav a:hover {
+                background-color: #ccc;
+            }
+
+        .w3-sidenav a, .w3-dropnav a {
+            display: block;
+        }
+
+            .w3-sidenav .w3-dropdown-hover:hover, .w3-sidenav .w3-dropdown-hover:first-child, .w3-sidenav .w3-dropdown-click:hover, .w3-dropnav a:hover {
+                background-color: #ccc;
+                color: #000;
+            }
+
+        .w3-sidenav .w3-dropdown-hover, .w3-sidenav .w3-dropdown-click {
+            width: 100%;
+        }
+
+            .w3-sidenav .w3-dropdown-hover .w3-dropdown-content, .w3-sidenav .w3-dropdown-click .w3-dropdown-content {
+                min-width: 100%;
+            }
+</style>
+<nav class="w3-sidenav w3-light-grey w3-card-2" style="width:170px;margin-top:10px;">
+    <a href="#" class="tablinks w3-red "style="text-decoration:none" id="videoClick">Video Quality</a>
+    <a href="#" class="tablinks" style="text-decoration:none" id="frameClick">Automation Frameworks</a>
+        <a href="#" class="tablinks" style="text-decoration:none" id="supportClick">Support tools</a>
+</nav>
+
+<div style="margin-left:170px">
+
+    <div id="VideoQuality" class="w3-container city">
+        <h3>Video Quality</h3>
+        <table class="table" border="1" width="700">
+            <tbody>
+                <tr>
+                    <th>Video Quality Monitors</th>
+                    <th>Version</th>
+                </tr>
+                <tr>
+                    <td>Tektronix MPEG analyser</td>
+                    <td>9.6.9</td>
+                </tr>
+                <tr>
+                    <td>ineoquest MPEG analyser</td>
+                    <td>4.02.00.607</td>
+                </tr>
+                <tr>
+                    <td>Cheetah MPEG analyser</td>
+                    <td>5.05.000016</td>
+                </tr>
+                <tr>
+                    <td>DP580 audio analyser</td>
+                    <td>1.1.2.5</td>
+                </tr>
+            </tbody>
+        </table>
+        <text>
+            <p>We use these tools to test the video quality and these are the Compression Artifacts which we look for: CONTOURING, HALOING, MACROBLOCKING, NOISE, SMEARING & PUMPING.  </p>
+            @*<ul>
+                <li><ins>CONTOURING:</ins> Contouring is a defect where abrupt changes between shades of the same color create color bands instead of a gradual change. This can be seen during scenes with a large amount of smooth color or in scenes where this is a color contrast change like in wide-angle sunsets, dawns, or clear blue skies.</li>
+                <li>
+                    <ins>HALOING:</ins> Haloing is typically seen around areas of high contrast, such as sharp lines, text edges, and graphics. On close inspection, part of the graphic appears to extend into the background.<br />
+                    Haloing can manifest as smaller details in graphics appearing to soften or loose edge resolution resulting in apparent blocking along graphic edges.
+                </li>
+
+                <li>
+                    <ins>MACROBLOCKING:</ins> Macroblocking is a defect where the edges of blocks or rows of blocks, are typically seen as a grid-like-pattern. This defect often occurs during dissolves from one scene to another or during action scenes involving a great deal of complex movement.<br />
+                    Another way this artifact is presented is with small to large pixels and/or blocks containing corrupted or green pictures. This is caused by transmission or transport anomalies.
+                </li>
+                <li>
+                    <ins>NOISE:</ins> Noise appears as random speckles on an otherwise smooth surface and can significantly degrade video quality.<br />
+                    Although noise often detracts from an image, it is sometimes desirable sinceit can add a grainy look that is reminiscent of film. Noice can also increase the apparent sharpness of an image.
+                </li>
+                <li>
+                    <ins>SMEARING:</ins> Smearing is a defect where part of the image remains fixed in space while the adjacent parts of the image moves leaving a trail. Smearing may also be observed in faces or across large areas of a similar type that have fine detail (e.g. grass fields).<br />
+                    Smearing commonly affects facial color tones causing video to take on an unnatural look.
+                </li>
+                <li>
+                    <ins>PUMPING:</ins> Pumping is a defect where the video or parts of the video appear to pulse at a regular interval.<br />
+                    This is typically seen in areas of smooth neutral colors.
+                </li>
+            </ul>*@
+        </text>
+
+        
+    </div>
+
+    <div id="automationFrameworks" class="w3-container city">
+            <h2>Automation Frameworks</h2>
+            <table class="table" border="1" width="80% !important">
+                <tr>
+                    <th>Product</th>
+                    <th>Framework</th>
+                </tr>
+                <tr>
+                    <td>DAC</td>
+                    <td>Hybrid Framework</td>
+                </tr>
+                <tr>
+                    <td>RPC Simulator</td>
+                    <td>Spring Framework</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="supportTools" class="w3-container city">
+            <h2>Support tools</h2>
+            <table class="table" border="1" width="80% !important">
+                <tr>
+                    <th>Product</th>
+                    <th>tools</th>
+                </tr>
+                <tr>
+                    <td>DAC</td>
+                    <td>UFT</td>
+                </tr>
+                <tr>
+                    <td>CASMR</td>
+                    <td>Eclipse, Maven, TestNG</td>
+                </tr>
+                <tr>
+                    <td>DTA AG</td>
+                    <td>UFT</td>
+                </tr>
+                <tr>
+                    <td>One Controller</td>
+                    <td>Selenium, Eclipse, TestNG, Jenkins.</td>
+                </tr>
+                <tr>
+                    <td>Video Quality</td>
+                    <td>Selenium, TestNG, Jasper Report tool.</td>
+                </tr>
+            </table>
+        </div>
+
 </div>
+
+<script>
+    $('#automationFrameworks').hide();
+    $('#supportTools').hide();
+    $('#frameClick').click(function () {
+        $('#frameClick').addClass("w3-red");
+        $('#videoClick').removeClass("w3-red");
+        $('#supportClick').removeClass("w3-red");
+        $('#VideoQuality').hide();
+        $('#supportTools').hide();
+        $('#automationFrameworks').show();
+    });
+    $('#supportClick').click(function () {
+        $('#supportClick').addClass("w3-red");
+        $('#frameClick').removeClass("w3-red");
+        $('#videoClick').removeClass("w3-red");
+        $('#VideoQuality').hide();
+        $('#automationFrameworks').hide();
+        $('#supportTools').show();
+    });
+    $('#videoClick').click(function () {
+        $('#videoClick').addClass("w3-red");
+        $('#frameClick').removeClass("w3-red");
+        $('#supportClick').removeClass("w3-red");
+        $('#VideoQuality').show();
+        $('#automationFrameworks').hide();
+        $('#supportTools').hide();
+    });
+</script>
+
+

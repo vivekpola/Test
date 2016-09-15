@@ -3,10 +3,279 @@
     ViewBag.Title = "Innovation";
 }
 
-<h2>Innovation</h2>
+<script src="@Url.Content("~/Scripts/jquery-1.10.2.min.js")"></script>
+<style>
+    .form-inline .form-group {
+        display: block;
+    }
+
+    .table tbody > tr > td {
+        border-top: unset;
+    }
+</style>
 <div class="row">
-    <img src="~/Content/Images/idea.jpg" alt="idea" style="height:50px;width:55px" />
-    <span style="font-family:monospace"><b>Innovation Ideas</b></span>
+    <h4>VECTOR team IDD submitted to date and Status.</h4>
+    <div>
+        <form class="form-inline" style="padding:10px 0px 10px 0px;">
+            <div class="form-group">
+                <label class="text-primary" for="Innovate">Select IDD</label>
+                <select class="form-control" id="Innovate">
+                    <option>IDD Name</option>
+                    <option value="1">X1 Content swap dashboard</option>
+                    <option value="2">X1 Reader</option>
+                    <option value="3">Cisco platform Alarm App</option>
+                    <option value="4">Deliver local video adds over IP Submitted</option>
+
+                </select>
+            </div>
+        </form>
+    </div>
+    <div class="col-lg-11" id="idd1">
+        <table border="0" class="table" style="margin-left:50px;margin-top:20px;">
+            <tr>
+                <td><b>Submitter: </b></td>
+                <td>Don Stecher</td>
+            </tr>
+            <tr>
+                <td><b>IDD Name: </b></td>
+                <td>X1 Content swap dashboard</td>
+            </tr>
+            <tr>
+                <td><b>IDD Description: </b></td>
+                <td>Allow the customer the ability to switch content into a video dashboard by utilizing the Xfinity Voice Remote. The user can define, and execute basic functions on the content to provide the user with a stickier user experience. Currently X1 users need to exit watching traditional video programs to get into applications. With voice commands or programmed remote keys, the switching between content will be a more seamless experience for the customer, and Comcast will see more hours of X1 platform use.</td>
+            </tr>
+            <tr>
+                <td><b>Submission: </b></td>
+                <td>Submitted</td>
+            </tr>
+            <tr>
+                <td width="15%"><b>IDD Team Response: </b></td>
+                <td>IDD team was unable to determine the patentable technology.</td>
+            </tr>
+            <tr>
+                <td><b>Status: </b></td>
+                <td>Exploratory Phase</td>
+            </tr>
+            <tr>
+                <td><b>IDD Reviews: </b></td>
+                <td>--</td>
+            </tr>
+
+            <tr>
+                <td><b>Comments: </b></td>
+                <td>
+                    <textarea class="form-control" rows="5" style="max-width:unset;width:100%"></textarea>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary" name="Submit" style="margin:10px;" />
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-lg-11" id="idd2">
+        <table border="0" class="table" style="margin-left:50px;margin-top:20px;">
+            <tr>
+                <td><b>Submitter: </b></td>
+                <td>Don Stecher, Alexei Saveliev, Mike Lipczynski</td>
+            </tr>
+            <tr>
+                <td><b>IDD Name: </b></td>
+                <td>X1 Reader</td>
+            </tr>
+            <tr>
+                <td><b>IDD Description: </b></td>
+                <td>
+                    The X1 Reader aka Nanny Book Reader allows the user to read books and store their voices & pictures or videos into the cloud.
+
+                    The example use case is a grandparent/close caregiver would read a children book and record their voice using the X1 voice remote. The voice remote should allow for switching into different modes of operation to allow the user to record his or her voice, playback recorded voice or edit recorded voice tracks. During voice recording the voice translate engine would display the cloud-stored voice into text. This would allow the user to make any corrections in real time. After the voice track was recorded the user would have the ability to upload pictures or videos along with the recorded story so that they could add more visual pictures to their story. Once the story is recorded, the grandparent could send the story via an e-mail, thru the X1 system to their grandchildren. The e-mail would have a link to the stored story and the child could playback the recorded story. Playback of the recorded voice text would be highlighted as the story is read.
+                </td>
+            </tr>
+            <tr>
+                <td><b>Submission: </b></td>
+                <td>Submitted</td>
+            </tr>
+            <tr>
+                <td width="15%"><b>IDD Team Response: </b></td>
+                <td>IDD team was unable to determine the patentable technology.</td>
+            </tr>
+            <tr>
+                <td><b>Status: </b></td>
+                <td>Exploratory Phase</td>
+            </tr>
+            <tr>
+                <td><b>IDD Comments: </b></td>
+                <td>
+                    Hi Don, Alexei, and Michael, As per our conversation yesterday, Don, I wanted to follow up with Alexei and Michael as well to let them know that the CIMP team recently had discussions with some senior leadership out at Comcast Silicon Valley that are handling audio-based initiatives. They stated that with anything related to audio books at the moment, they are currently just in the exploratory phase of the initiative. They’re also primarily more focused on the listening aspects of audio books rather than recording aspects as your idea presents, unfortunately. However, since they currently don’t quite have a strong enough business case with regards to audio books in general at the moment, they said that the earliest possible instance of implementation would be Q4 of 2017. If anything else comes to light regarding audio book or recording initiatives or mindsets change, our team will be sure to let you guys know as soon as we hear of it. Thanks again for your idea, guys and we hope to see more from you in the future!
+                    <b> -- Chapman_Nitta@cable.comcast.com</b>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Comments: </b></td>
+                <td>
+                    <textarea class="form-control" rows="5" style="max-width:unset;width:100%"></textarea>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary" name="Submit" style="margin:10px;" />
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-lg-11" id="idd3">
+        <table border="0" class="table" style="margin-left:50px;margin-top:20px;">
+            <tr>
+                <td><b>Submitter: </b></td>
+                <td>George Smith</td>
+            </tr>
+            <tr>
+                <td><b>IDD Name: </b></td>
+                <td>Cisco platform Alarm App</td>
+            </tr>
+            <tr>
+                <td><b>IDD Description: </b></td>
+                <td>
+                    Currently the folks working in the Conditional Access Group are notified of video and plant issues by the local XNOC.
+                    By creating a app to alert the techs of issues and potential issues in realtime it will keep customer downtime to a minimum.
+                </td>
+            </tr>
+            <tr>
+                <td><b>Submission: </b></td>
+                <td>Submitted</td>
+            </tr>
+            <tr>
+                <td width="15%"><b>IDD Team Response: </b></td>
+                <td>IDD team was unable to determine the patentable technology.</td>
+            </tr>
+            <tr>
+                <td><b>Status: </b></td>
+                <td>No Update received</td>
+            </tr>
+            <tr>
+                <td><b>IDD Reviews: </b></td>
+                <td>--</td>
+            </tr>
+            <tr>
+                <td><b>Comments: </b></td>
+                <td>
+                    <textarea class="form-control" rows="5" style="max-width:unset;width:100%"></textarea>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary" name="Submit" style="margin:10px;" />
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-lg-11" id="idd4">
+        <table border="0" class="table" style="margin-left:50px;margin-top:20px;">
+            <tr>
+                <td><b>Submitter: </b></td>
+                <td>Mike Lipczynski</td>
+            </tr>
+            <tr>
+                <td><b>IDD Name: </b></td>
+                <td>Method to Deliver Local Video Ads Over an IP Network (Replacing Ad Splicing)</td>
+            </tr>
+            <tr>
+                <td><b>IDD Description: </b></td>
+                <td>Method to Deliver Local Video Ads Over an IP Network (Replacing Ad Splicing)- Deliver ads in mpeg files from the CDN.</td>
+            </tr>
+            <tr>
+                <td><b>Submission: </b></td>
+                <td>Submitted</td>
+            </tr>
+            <tr>
+                <td width="15%"><b>IDD Team Response: </b></td>
+                <td>IDD team considering for patent.</td>
+            </tr>
+            <tr>
+                <td><b>Status: </b></td>
+                <td>Accepted</td>
+            </tr>
+            <tr>
+                <td><b>IDD Reviews: </b></td>
+                <td>--</td>
+            </tr>
+            <tr>
+                <td><b>Comments: </b></td>
+                <td>
+                    <textarea class="form-control" rows="5" style="max-width:unset;width:100%"></textarea>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary" name="Submit" style="margin:10px;" />
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="table-responsive col-lg-8" id="iddtable">
+        <table style="width:100%;margin-top:20px;" border="1" class="table table-bordered">
+            <tbody>
+                <tr>
+                    <th bgcolor="#66ccff">IDD #</th>
+                    <th bgcolor="#66ccff">Submitter</th>
+                    <th bgcolor="#66ccff">IDD Name</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Don Stecher</td>
+                    <td>X1 Content swap dashboard</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Don, Alexei, Mike L.</td>
+                    <td>X1 Reader</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>George Smith</td>
+                    <td>Cisco platform Alarm App</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mike Lipczynski</td>
+                    <td>Deliver local video adds over IP Submitted</td>
+                </tr>
+        </table>
+    </div>
+
 </div>
+<script>
 
-
+    $("#idd1").hide();
+    $("#idd2").hide();
+    $("#idd3").hide();
+    $("#idd4").hide();
+    $("#Innovate").change(function () {
+        $("#iddtable").show();
+        $("#idd1").hide();
+        $("#idd2").hide();
+        $("#idd3").hide();
+        $("#idd4").hide();
+        if ($(this).val() == "1") {
+            $("#idd1").show();
+            $("#idd2").hide();
+            $("#idd3").hide();
+            $("#idd4").hide();
+            $("#iddtable").hide();
+        }
+        if ($(this).val() == "2") {
+            $("#idd1").hide();
+            $("#idd2").show();
+            $("#idd3").hide();
+            $("#idd4").hide();
+            $("#iddtable").hide();
+        }
+        if ($(this).val() == "3") {
+            $("#idd1").hide();
+            $("#idd2").hide();
+            $("#idd3").show();
+            $("#idd4").hide();
+            $("#iddtable").hide();
+        }
+        if ($(this).val() == "4") {
+            $("#idd1").hide();
+            $("#idd2").hide();
+            $("#idd3").hide();
+            $("#idd4").show();
+            $("#iddtable").hide();
+        }
+    });
+</script>

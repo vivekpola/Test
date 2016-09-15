@@ -1,4 +1,22 @@
 ﻿@using Microsoft.AspNet.Identity
+<style>
+    .trbutton:hover {
+        background-color: #2e6da4 !important;
+    }
+      .navbar-header {
+        padding-left: 20% !important;
+    }
+
+    .navbar-inverse .navbar-brand {
+        color: #d2821b !important;
+    }
+
+    .active {
+        background-color: #222222 !important;
+    }
+</style>
+
+
 @if (Request.IsAuthenticated)
 {
     using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
@@ -16,7 +34,11 @@
 else
 {
     <ul class="nav navbar-nav navbar-right">
-        <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
-        <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+        <li style="cursor:pointer"><a onclick="window.open('https://intake.cable.comcast.com/secure/CreateIssue.jspa?pid=10000&issuetype=28','_blank')" class="btn btn-primary trbutton" style="color:white !important;padding: 3px 3px 5px 2px;margin-top:10px;">Open a Test Request</a></li>
+        @*<li style="cursor:pointer"><a class="btn btn-default trbutton" onclick="window.open('https://intake.cable.comcast.com/login.jsp' , '_blank', 'location=yes,height=800,width=900,scrollbars=yes,status=yes')" style="padding: 3px 3px 5px 2px;margin-top:10px;margin-left:6px;">Intake Login</a></li>*@
+      @*  <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>*@
+       @* <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>*@
+        <li class="@(ViewBag.Current == "Contact" ? "active" : "")">@Html.ActionLink("Contact", "Contact", "Home")</li>
+
     </ul>
 }

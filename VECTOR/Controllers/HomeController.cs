@@ -53,6 +53,14 @@ namespace VECTOR.Controllers
             ViewBag.current = "Innovation";
             return View();
         }
+        public ActionResult Innovate1() {
+            ViewBag.current = "Innovation";
+            return View();
+        }
+        public ActionResult Environments() {
+            ViewBag.current = "Environments";
+            return View();
+        }
 
     }
 }

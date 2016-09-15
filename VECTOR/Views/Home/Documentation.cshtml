@@ -3,32 +3,7 @@
     ViewBag.Title = "Documentation";
 }
 
-<h2>Documentation</h2>
-
-<div class="container kv-main">
-
-
-    <form enctype="multipart/form-data">
-
-        <div class="form-group">
-            <input id="file-1" type="file" multiple class="file" data-overwrite-initial="false" data-min-file-count="2">
-        </div>
-
-    </form>
-
-
-
+<h4>VECTOR team Documentation.</h4>
+<div>
+    <iframe src="https://app.box.com/embed_widget/files/0/f/8309054545/VECTOR_team" width="100%" height="620" frameborder="1" allowfullscreen="allowfullscreen"></iframe>
 </div>
-<script>
-    $("#file-1").fileinput({
-        uploadUrl: '#', // you must set a valid URL here else you will get an error
-        allowedFileExtensions: ['jpg', 'png', 'gif'],
-        overwriteInitial: false,
-        maxFileSize: 1000,
-        maxFilesNum: 10,
-        //allowedFileTypes: ['image', 'video', 'flash'],
-        slugCallback: function (filename) {
-            return filename.replace('(', '_').replace(']', '_');
-        }
-    });
-</script>

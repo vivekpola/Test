@@ -1,0 +1,435 @@
+﻿
+@{
+    ViewBag.Title = "Environments";
+}
+
+<style>
+    nav {
+        float: left;
+        max-width: 170px;
+        margin: 0;
+        padding: 1em;
+    }
+
+    #myTab li {
+        cursor: pointer;
+    }
+
+    th {
+        background-color: #66ccff;
+    }
+
+    .table {
+        width: auto !important;
+    }
+</style>
+
+
+
+<div class="container">
+    <nav>
+        <ul class="nav nav-tabs" id="myTab">
+            <li class="active" style="background-color:white !important"><a data-target="#arris" data-toggle="tab">Arris Controllers</a></li>
+            <li style="background-color:white !important"><a data-target="#cisco" data-toggle="tab">Cisco Controllers</a></li>
+            <li style="background-color:white !important"><a data-target="#videoprov" data-toggle="tab">Video Processors</a></li>
+            <li style="background-color:white !important"><a data-target="#oc" data-toggle="tab">One Controller</a></li>
+            <li style="background-color:white !important"><a data-target="#hosp" data-toggle="tab">Hospitality</a></li>
+            <li style="background-color:white !important"><a data-target="#devices" data-toggle="tab">Headend Devices</a></li>
+        </ul>
+    </nav>
+    <div class="tab-content" style="background-color:white !important">
+        <div class="tab-pane active" style="background-color:white !important;" id="arris">
+            <h3>Arris Controllers</h3>
+            <table border="1" class="table">
+                <tbody>
+                    <tr>
+                        <th>Product/Device</th>
+                        <th>Version</th>
+                    </tr>
+                    <tr>
+                        <td>CASMR 17</td>
+                        <td>R8B (8.2.2)</td>
+                    </tr>
+                    <tr>
+                        <td>CASMR 18</td>
+                        <td>R8B (8.2.2)</td>
+                    </tr>
+                    <tr>
+                        <td>CASMR 25</td>
+                        <td>R8B (8.2.2)</td>
+                    </tr>
+                    <tr>
+                        <td>DAC 4</td>
+                        <td>5.3 R1</td>
+                    </tr>
+                    <tr>
+                        <td>DAC 17</td>
+                        <td>5.2 R2</td>
+                    </tr>
+                    <tr>
+                        <td>DAC 18</td>
+                        <td>5.2 R2</td>
+                    </tr>
+                    <tr>
+                        <td>DAC 25</td>
+                        <td>5.3 R2</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="tab-pane" style="background-color:white !important;" id="cisco">
+
+
+            <h3>Cisco Controllers</h3>
+
+            <table border="1" class="table">
+                <tbody>
+                    <tr>
+                        <th>Headend</th>
+                        <th>AGI Adaptor</th>
+                        <th>DBDSUtils</th>
+                        <th>DTACS</th>
+                        <th>DTACS Informix</th>
+                        <th>DTACS RepDB</th>
+                        <th>EC</th>
+                        <th>EC Informix</th>
+                        <th>EC RepDB</th>
+                        <th>GQAM</th>
+                        <th>PCG</th>
+                        <th>QPSK Bridge</th>
+                    </tr>
+                    <tr><td style="background-color: white; text-align: center;">HE2 (Prod)</td><td style="background-color: white; text-align: center;">-</td><td style="background-color: white; text-align: center;">6.4.0.14</td><td style="background-color: white; text-align: center;">3.0.0.18</td><td style="background-color: white; text-align: center;">-</td><td style="background-color: white; text-align: center;">-</td><td style="background-color: white; text-align: center;">5.1.0.12p4</td><td style="background-color: white; text-align: center;">-</td><td style="background-color: white; text-align: center;">1.1.0.2</td><td style="background-color: white; text-align: center;">V4.5.10</td><td style="background-color: white; text-align: center;">-</td><td style="background-color: white; text-align: center;">-</td></tr>
+                    <tr><td style="background-color: white; text-align: center;">HE3 (ULA)</td><td style="background-color: white; text-align: center;">2.1.2</td><td style="background-color: white; text-align: center;">6.6.0.15</td><td style="background-color: white; text-align: center;">4.1.0.5p3</td><td style="background-color: white; text-align: center;">11.70.FC8W1-1</td><td style="background-color: white; text-align: center;">2.1.2</td><td style="background-color: white; text-align: center;">7.0.0.16p6</td><td style="background-color: white; text-align: center;">11.70.FC8W1-1</td><td style="background-color: white; text-align: center;">2.1.2</td><td style="background-color: white; text-align: center;">V4.6.4</td><td style="background-color: white; text-align: center;">3.0.0.5</td><td style="background-color: white; text-align: center;">1.2.22</td></tr>
+                    <tr><td style="background-color: white; text-align: center;">HE6 (ULA)</td><td style="background-color: white; text-align: center;">-</td><td style="background-color: white; text-align: center;">6.6.0.6</td><td style="background-color: white; text-align: center;">3.0.0.18</td><td style="background-color: white; text-align: center;">-</td><td style="background-color: white; text-align: center;">-</td><td style="background-color: white; text-align: center;">7.0.0.15p4</td><td style="background-color: white; text-align: center;">11.70.FC4-7</td><td style="background-color: white; text-align: center;">2.0.13</td><td style="background-color: white; text-align: center;">V4.6.4</td><td style="background-color: white; text-align: center;">-</td><td style="background-color: white; text-align: center;">-</td></tr>
+                    <tr><td style="background-color: white; text-align: center;">HE7 (ULA)</td><td style="background-color: white; text-align: center;">-</td><td style="background-color: white; text-align: center;">6.4.0.14</td><td style="background-color: white; text-align: center;">3.0.0.18p2</td><td style="background-color: white; text-align: center;">-</td><td style="background-color: white; text-align: center;">-</td><td style="background-color: white; text-align: center;">5.1.0.12p7</td><td style="background-color: white; text-align: center;">-</td><td style="background-color: white; text-align: center;">1.1.0.2</td><td style="background-color: white; text-align: center;">V4.5.10</td><td style="background-color: white; text-align: center;">-</td><td style="background-color: white; text-align: center;">1.2.22</td></tr>
+                    <tr><td style="background-color: white; text-align: center;">HE8 (Prod)</td><td style="background-color: white; text-align: center;">-</td><td style="background-color: white; text-align: center;">6.6.0.6</td><td style="background-color: white; text-align: center;">4.0.0.9p1</td><td style="background-color: white; text-align: center;">11.70.FC4-7</td><td style="background-color: white; text-align: center;">-</td><td style="background-color: white; text-align: center;">7.0.0.15p3</td><td style="background-color: white; text-align: center;">11.70.FC4-7</td><td style="background-color: white; text-align: center;">2.0.13</td><td style="background-color: white; text-align: center;">V4.6.4</td><td style="background-color: white; text-align: center;">-</td><td style="background-color: white; text-align: center;">-</td></tr>
+                    <tr><td style="background-color: white; text-align: center;">HE11 (Prod)</td><td style="background-color: white; text-align: center;">-</td><td style="background-color: white; text-align: center;">6.6.0.6</td><td style="background-color: white; text-align: center;">4.1.0.5p3</td><td style="background-color: white; text-align: center;">11.70.FC8W1-1</td><td style="background-color: white; text-align: center;">2.1.2</td><td style="background-color: white; text-align: center;">7.0.0.15p4</td><td style="background-color: white; text-align: center;">11.70.FC4-7</td><td style="background-color: white; text-align: center;">2.0.13</td><td style="background-color: white; text-align: center;">V4.6.4</td><td style="background-color: white; text-align: center;">3.0.0.5</td><td style="background-color: white; text-align: center;">-</td></tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="tab-pane" style="background-color:white !important;" id="videoprov">
+            <h3>Video Processors</h3>
+            <table class="table" border="1">
+                <tbody>
+                    <tr>
+                        <td colspan="7" style="text-align:center;background-color:cornflowerblue;font-size:large"><b>Arris VIPr</b></td>
+                    </tr>
+                    <tr>
+                        <th>Sr. No</th>
+                        <th>Device Type/ Name</th>
+                        <th>Manufacture</th>
+                        <th>Model</th>
+                        <th>Build Version</th>
+                        <th>
+                            IP Address
+                        </th>
+                        <th>Environment</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Transcoder</td>
+                        <td>Arris</td>
+                        <td>VIPr6200</td>
+                        <td>Rev: 5.3.2 (Build:9)</td>
+                        <td>10.253.168.198</td>
+                        <td>Juniper</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Transcoder</td>
+                        <td>Arris</td>
+                        <td>VIPr6200</td>
+                        <td>Rev: 5.3.2 (Build:9)</td>
+                        <td>10.253.168.199</td>
+                        <td>Juniper</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Transcoder</td>
+                        <td>Arris</td>
+                        <td>VIPr6200</td>
+                        <td>Rev: 5.3.2 (Build:9)</td>
+                        <td>10.253.168.234</td>
+                        <td>Cisco</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Transcoder</td>
+                        <td>Arris</td>
+                        <td>VIPr6200</td>
+                        <td>Rev: 5.3.2 (Build:9)</td>
+                        <td>10.253.168.235</td>
+                        <td>Cisco</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Transcoder</td>
+                        <td>Arris</td>
+                        <td>VIPr6200</td>
+                        <td>Rev: 5.3.2 (Build:9)</td>
+                        <td>10.253.168.236</td>
+                        <td>Cisco</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Transcoder</td>
+                        <td>Arris</td>
+                        <td>VIPr6200</td>
+                        <td>Rev: 5.3.2 (Build:9)</td>
+                        <td>10.253.168.237</td>
+                        <td>Cisco</td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" style="text-align:center;background-color:cornflowerblue;font-size:large"><b>Harmonic</b></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>NMX Server</td>
+                        <td>Windos Server</td>
+                        <td>Windows Server 2008</td>
+                        <td>NMX 7.3.1.2.018.000</td>
+                        <td>10.253.254.66</td>
+                        <td>Cisco - ASR</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>NMX Server</td>
+                        <td>Windos Server</td>
+                        <td>Windows Server 2008</td>
+                        <td>NMX 6.6.5</td>
+                        <td>10.253.254.82</td>
+                        <td>Cisco - ASR</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>NMX Server</td>
+                        <td>Windos Server</td>
+                        <td>Windows Server 2008</td>
+                        <td>NMX 6.6.5</td>
+                        <td>10.253.254.83</td>
+                        <td>Cisco - ASR</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>E 9K .67</td>
+                        <td>Harmonic</td>
+                        <td>Electra 9000 Encoder</td>
+                        <td>Electra9000/9.20.1.0.51</td>
+                        <td>10.253.254.67</td>
+                        <td>Cisco - ASR</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>E1K .78</td>
+                        <td>Harmonic</td>
+                        <td>Electra 1000 Encoder</td>
+                        <td>Electra1000-5000/x_10.06.00.111</td>
+                        <td>10.253.254.78</td>
+                        <td>Cisco - ASR</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>E5K .73</td>
+                        <td>Harmonic</td>
+                        <td>Electra 5000 Encoder</td>
+                        <td>Electra1000-5000/x_10.06.00.111</td>
+                        <td>10.253.254.73</td>
+                        <td>Cisco - ASR</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>E5K .77</td>
+                        <td>Harmonic</td>
+                        <td>Electra 5000 Encoder</td>
+                        <td>Electra1000-5000/x_10.06.00.111</td>
+                        <td>10.253.254.77</td>
+                        <td>Cisco - ASR</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>E8K .71</td>
+                        <td>Harmonic</td>
+                        <td>Electra 8000 Encoder</td>
+                        <td>Electra8000/d_10.13.01.054</td>
+                        <td>10.253.254.71</td>
+                        <td>Cisco - ASR</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>E8K.74</td>
+                        <td>Harmonic</td>
+                        <td>Electra 8000 Encoder</td>
+                        <td>Electra8000/d_10.13.01.054</td>
+                        <td>10.253.254.74</td>
+                        <td>Cisco - ASR</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>E9K .90</td>
+                        <td>Harmonic</td>
+                        <td>Electra 9000 Encoder</td>
+                        <td>Electra9000/9.20.1.0.51</td>
+                        <td>10.253.254.90</td>
+                        <td>Cisco - ASR</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>ION .85</td>
+                        <td>Harmonic</td>
+                        <td>ION Encoder</td>
+                        <td>Ion/e_10.06.00.113</td>
+                        <td>10.253.254.85</td>
+                        <td>Cisco - ASR</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>P1K .92</td>
+                        <td>Harmonic</td>
+                        <td>Prostream 1000 - Encoder/Transcoder/Multiplexer</td>
+                        <td>06.08.02.005</td>
+                        <td>10.253.254.92</td>
+                        <td>Cisco - ASR</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>P9K .79</td>
+                        <td>Harmonic</td>
+                        <td>Prostream 9000 - Encoder/Transcoder/Multiplexer</td>
+                        <td>10.5.2.0.89</td>
+                        <td>10.253.254.79</td>
+                        <td>Cisco - ASR</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>P9K .91</td>
+                        <td>Harmonic</td>
+                        <td>Prostream 9000 - Encoder/Transcoder/Multiplexer</td>
+                        <td>10.5.2.0.89</td>
+                        <td>10.253.254.91</td>
+                        <td>Cisco - ASR</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Prostream 1K .93</td>
+                        <td>Harmonic</td>
+                        <td>Prostream 1000 - Encoder/Transcoder/Multiplexer</td>
+                        <td>06.08.02.005</td>
+                        <td>10.253.254.93</td>
+                        <td>Cisco - ASR</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>PS 9K</td>
+                        <td>Harmonic</td>
+                        <td>Standalone - Prostream 9000 - Encoder/Transcoder/Multiplexer</td>
+                        <td>10.5.2.0.89</td>
+                        <td>10.253.254.115</td>
+                        <td>Anycast</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>PS 9K</td>
+                        <td>Harmonic</td>
+                        <td>Standalone - Prostream 9000 - Encoder/Transcoder/Multiplexer</td>
+                        <td>10.5.2.0.89</td>
+                        <td>10.253.254.116</td>
+                        <td>Anycast</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-pane" style="background-color:white !important;" id="oc">
+            <h3>One Controller</h3>
+            <table class="table" border="1">
+                <tbody>
+                    <tr>
+                        <th>Product</th>
+                        <th>Version</th>
+                    </tr>
+                    <tr>
+                        <td>BST</td>
+                        <td><ul><li>5.0.5 in Field</li><li>5.0.10 under trial</li></ul></td>
+                    </tr>
+                    <tr>
+                        <td>VDP</td>
+                        <td><ul><li>1.2.1 in field</li><li>1.2.3 - Under test</li></ul></td>
+                    </tr>
+                    <tr>
+                        <td>BOA</td>
+                        <td>3.6.0.11 baselined for trial</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-pane" style="background-color:white !important;" id="hosp">
+            <h3>Hospitality Devices</h3>
+            <table class="table" border="1">
+                <tbody>
+                    <tr>
+                        <th>Device</th>
+                        <th>Version</th>
+
+                    </tr>
+                    <tr>
+                        <td>Q2Q</td>
+                        <td>7.2.7</td>
+
+                    </tr>
+                    <tr>
+                        <td>MDTA mini Arris</td>
+                        <td>3.2.5</td>
+
+                    </tr>
+                    <tr>
+                        <td>MDTA mini Cisco</td>
+                        <td>1.2.19</td>
+
+                    </tr>
+                    <tr>
+                        <td>MDTA maxi Arris</td>
+                        <td>5.2.5</td>
+
+
+                    </tr>
+                    <tr>
+                        <td>MDTA maxi Cisco</td>
+                        <td>4.3.4</td>
+
+                    </tr>
+                    <tr>
+                        <td>DSAN</td>
+                        <td>1.1.58</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tab-pane" style="background-color:white !important;" id="devices">
+
+            <h3>Other Headend Devices</h3>
+            <table class="table" border="1">
+                <tbody>
+                    <tr>
+                        <th>Product</th>
+                        <th>Version</th>
+                    </tr>
+                    <tr>
+                        <td>ARPD</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>OM</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>DKS</td>
+                        <td>3.1.14</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

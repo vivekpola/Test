@@ -2,7 +2,7 @@
 @{
     ViewBag.Title = "TeamProfile";
 }
-
+<script type="text/javascript" src="~/Scripts/jquery-1.10.2.min.js"></script>
 <style>
     .profile-box {
         height: 200px;
@@ -32,13 +32,44 @@
     .span {
         text-align: center;
     }
+
+    .jumbotron {
+        font-size: 16px;
+        padding-top: unset;
+        padding-bottom: unset;
+        padding: 5px;
+        margin-bottom: unset;
+        line-height: 1.5;
+    }
+
+    .form-inline .form-group {
+        display: block;
+    }
 </style>
-<h2> Team Profile </h2>
 <div class="container">
-    <div class="table-responsive" style="padding-top:15px;">
+    <div class="jumbotron">
+
+        <form class="form-inline" style="padding:10px 0px 10px 0px;">
+            <div class="form-group">
+                <label class="text-primary" for="teamSelect">Select Team</label>
+                <select class="form-control" id="teamSelect">
+                    <option>Team VECTOR</option>
+                    <option value="1">Arris Platform & Video Quality</option>
+                    <option value="2">One Controller & IP direct</option>
+                    <option value="3">Cisco Platform</option>
+                    <option value="4">Hospitality</option>
+                    <option value="5">Video Processors</option>
+                    <option value="6">Offshore</option>
+
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <div class="table-responsive" style="padding-top:30px;">
         <div class="row">
             <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href='https://www.comcastnow.com/profile/33527'">
+                <div class="profile-box" onclick="window.open('https://www.comcastnow.com/profile/33527', '_blank')">
                     <div class="row">
                         <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url(https://www.comcastnow.com/profiletools/ProfilePicture.ashx?ID=CABLE_ASAVEL00);background-size:100px 100px;background-repeat:no-repeat; "></div>
                     </div>
@@ -50,373 +81,317 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/83074'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
+            <div id="arristeam">
+                <div class="col-lg-3 col-sm-3">
+                    <div class="profile-box" onclick="window.open('https://www.comcastnow.com/profile/32372','_blank')">
+                        <div class="row">
+                            <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url(https://www.comcastnow.com/profiletools/ProfilePicture.ashx?ID=Cable_AJurka000);background-size:100px 100px;background-repeat:no-repeat; "></div>
+                        </div>
+                        <div class="row">
+                            <h4>Atis Jurka</h4>
+                        </div>
+                        <div class="row span">
+                            <span>Principal Engineer, Quality Assurance</span>
+                        </div>
                     </div>
-                    <div class="row">
-                        <h4>Rajapandian Bose</h4>
+                </div>
+                <div class="col-lg-3 col-sm-3">
+                    <div class="profile-box" onclick="window.open('https://www.comcastnow.com/profile/90612','_blank')">
+                        <div class="row">
+                            <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url(https://www.comcastnow.com/profiletools/ProfilePicture.ashx?ID=CABLE_KHOUSE001C);background-size:100px 100px;background-repeat:no-repeat; "></div>
+                        </div>
+                        <div class="row">
+                            <h4>Keith Houser</h4>
+                        </div>
+                        <div class="row span">
+                            <span>Contractor</span>
+                        </div>
                     </div>
-                    <div class="row span">
-                        <span>Contractor</span>
+                </div>
+                <div class="col-lg-3 col-sm-3">
+                    <div class="profile-box" onclick="window.open('https://www.comcastnow.com/profile/87313','_blank')">
+                        <div class="row">
+                            <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
+                        </div>
+                        <div class="row">
+                            <h4>Robert Kelly</h4>
+                        </div>
+                        <div class="row span">
+                            <span>Contractor</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-3">
+                    <div class="profile-box" onclick="window.open('https://www.comcastnow.com/profile/84951','_blank')">
+                        <div class="row">
+                            <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url(https://www.comcastnow.com/profiletools/ProfilePicture.ashx?ID=CABLE_BSINGH005C);background-size:100px 100px;background-repeat:no-repeat; "></div>
+                        </div>
+                        <div class="row">
+                            <h4>Baljinder Singh</h4>
+                        </div>
+                        <div class="row span">
+                            <span>Contractor</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-3">
+                    <div class="profile-box" onclick="window.open('https://www.comcastnow.com/profile/197921','_blank')">
+                        <div class="row">
+                            <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url(https://www.comcastnow.com/profiletools/ProfilePicture.ashx?ID=CABLE_DREIFF001C);background-size:100px 100px;background-repeat:no-repeat; "></div>
+                        </div>
+                        <div class="row">
+                            <h4>Dave Reiff</h4>
+                        </div>
+                        <div class="row span">
+                            <span>Contractor</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/349477'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
+            <div id="oneteam">
+                <div class="col-lg-3 col-sm-3">
+                    <div class="profile-box" onclick="window.open('https://www.comcastnow.com/profile/30707','_blank')">
+                        <div class="row">
+                            <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url(https://www.comcastnow.com/profiletools/ProfilePicture.ashx?ID=CABLE_MLIPCZ000);background-size:100px 100px;background-repeat:no-repeat; "></div>
+                        </div>
+                        <div class="row">
+                            <h4>Michael Lipczynski</h4>
+                        </div>
+                        <div class="row span">
+                            <span>Principle Engineer <br />Quality Assurance</span>
+                        </div>
                     </div>
-                    <div class="row">
-                        <h4>Auniket Chakravorty</h4>
+                </div>
+                <div class="col-lg-3 col-sm-3">
+                    <div class="profile-box" onclick="window.open('https://www.comcastnow.com/profile/86919','_blank')">
+                        <div class="row">
+                            <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url(https://www.comcastnow.com/profiletools/ProfilePicture.ashx?ID=CABLE_NSIROH001C);background-size:100px 100px;background-repeat:no-repeat; "></div>
+                        </div>
+                        <div class="row">
+                            <h4>Nishant Sirohi</h4>
+                        </div>
+                        <div class="row span">
+                            <span>Contractor</span>
+                        </div>
                     </div>
-                    <div class="row span">
-                        <span>Contractor</span>
+                </div>
+                <div class="col-lg-3 col-sm-3">
+                    <div class="profile-box" onclick="window.open('https://www.comcastnow.com/profile/82771','_blank')">
+                        <div class="row">
+                            <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url(https://www.comcastnow.com/profiletools/ProfilePicture.ashx?ID=CABLE_SKUPPU002C);background-size:100px 100px;background-repeat:no-repeat; "></div>
+                        </div>
+                        <div class="row">
+                            <h4>Sampathkumar Kuppusamy</h4>
+                        </div>
+                        <div class="row span">
+                            <span>Contractor</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-3">
+                    <div class="profile-box" onclick="window.open('https://www.comcastnow.com/profile/92753','_blank')">
+                        <div class="row">
+                            <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url(https://www.comcastnow.com/profiletools/ProfilePicture.ashx?ID=CABLE_VPALAN001C);background-size:100px 100px;background-repeat:no-repeat; "></div>
+                        </div>
+                        <div class="row">
+                            <h4>Vignesh Palanisamy</h4>
+                        </div>
+                        <div class="row span">
+                            <span>Contractor</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/82771'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
+            <div id="ciscoteam">
+                <div class="col-lg-3 col-sm-3">
+                    <div class="profile-box" onclick="window.open('https://www.comcastnow.com/profile/10708','_blank')">
+                        <div class="row">
+                            <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
+                        </div>
+                        <div class="row">
+                            <h4>George Smith</h4>
+                        </div>
+                        <div class="row span">
+                            <span>Eng 5, Network Engineer</span>
+                        </div>
                     </div>
-                    <div class="row">
-                        <h4>Sampathkumar Kuppusamy</h4>
+                </div>
+                <div class="col-lg-3 col-sm-3">
+                    <div class="profile-box" onclick="window.open('https://www.comcastnow.com/profile/90232','_blank')">
+                        <div class="row">
+                            <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url(https://www.comcastnow.com/profiletools/ProfilePicture.ashx?ID=CABLE_DGURUN00C);background-size:100px 100px;background-repeat:no-repeat; "></div>
+                        </div>
+                        <div class="row">
+                            <h4>Deepak Gurung</h4>
+                        </div>
+                        <div class="row span">
+                            <span>Contractor</span>
+                        </div>
                     </div>
-                    <div class="row span">
-                        <span>Contractor</span>
+                </div>
+                <div class="col-lg-3 col-sm-3">
+                    <div class="profile-box" onclick="window.open('https://www.comcastnow.com/profile/85872','_blank')">
+                        <div class="row">
+                            <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url(https://www.comcastnow.com/profiletools/ProfilePicture.ashx?ID=CABLE_WGIRTA002C);background-size:100px 100px;background-repeat:no-repeat; "></div>
+                        </div>
+                        <div class="row">
+                            <h4>William Girtain</h4>
+                        </div>
+                        <div class="row span">
+                            <span>Contractor</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/32372'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url(https://www.comcastnow.com/profiletools/ProfilePicture.ashx?ID=Cable_AJurka000);background-size:100px 100px;background-repeat:no-repeat; "></div>
+            <div id="hosteam">
+                <div class="col-lg-3 col-sm-3">
+                    <div class="profile-box" onclick="window.open('https://www.comcastnow.com/profile/46923','_blank')">
+                        <div class="row">
+                            <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url(https://www.comcastnow.com/profiletools/ProfilePicture.ashx?ID=Cable_dstech200);background-size:100px 100px;background-repeat:no-repeat; "></div>
+                        </div>
+                        <div class="row">
+                            <h4>Don Stecher</h4>
+                        </div>
+                        <div class="row span">
+                            <span>Technical Project Mgr 4, Project Mgmt</span>
+                        </div>
                     </div>
-                    <div class="row">
-                        <h4>Atis Jurka</h4>
-                    </div>
-                    <div class="row span">
-                        <span>Principal Engineer, Quality Assurance</span>
+                </div>
+                <div class="col-lg-3 col-sm-3">
+                    <div class="profile-box" onclick="window.open('https://www.comcastnow.com/profile/368873','_blank')">
+                        <div class="row">
+                            <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url(https://www.comcastnow.com/profiletools/ProfilePicture.ashx?ID=CABLE_VPOLLA001C);background-size:100px 100px;background-repeat:no-repeat; "></div>
+                        </div>
+                        <div class="row">
+                            <h4>Vivek Pola</h4>
+                        </div>
+                        <div class="row span">
+                            <span>Contractor</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/81552'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
-                    </div>
-                    <div class="row">
-                        <h4>Lingasamy Kandasamy</h4>
-                    </div>
-                    <div class="row span">
-                        <span>Contractor</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/87313'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
-                    </div>
-                    <div class="row">
-                        <h4>Robert Kelly</h4>
-                    </div>
-                    <div class="row span">
-                        <span>Contractor</span>
+            <div id="videoprocteam">
+                <div class="col-lg-3 col-sm-3">
+                    <div class="profile-box" onclick="window.open('https://www.comcastnow.com/profile/80122','_blank')">
+                        <div class="row">
+                            <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url(https://www.comcastnow.com/profiletools/ProfilePicture.ashx?ID=CABLE_PRABAR200);background-size:100px 100px;background-repeat:no-repeat; "></div>
+                        </div>
+                        <div class="row">
+                            <h4>Pragnesh Rabari</h4>
+                        </div>
+                        <div class="row span">
+                            <span>Senior QA Engineer</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/81580'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
-                    </div>
-                    <div class="row">
-                        <h4>Puneet Kulshrestha</h4>
-                    </div>
-                    <div class="row span">
-                        <span>Contractor</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/30707'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url(https://www.comcastnow.com/profiletools/ProfilePicture.ashx?ID=CABLE_MLIPCZ000);background-size:100px 100px;background-repeat:no-repeat; "></div>
-                    </div>
-                    <div class="row">
-                        <h4>Michael Lipczynski</h4>
-                    </div>
-                    <div class="row span">
-                        <span>Principle Engineer <br />Quality Assurance</span>
+            <div id="offshoreteam">
+                <div class="col-lg-3 col-sm-3">
+                    <div class="profile-box" onclick="window.open('https://www.comcastnow.com/profile/83074','_blank')">
+                        <div class="row">
+                            <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url(https://www.comcastnow.com/profiletools/ProfilePicture.ashx?ID=CABLE_RBOSE001C);background-size:100px 100px;background-repeat:no-repeat; "></div>
+                        </div>
+                        <div class="row">
+                            <h4>Rajapandian Bose</h4>
+                        </div>
+                        <div class="row span">
+                            <span>Contractor</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/86508'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
-                    </div>
-                    <div class="row">
-                        <h4>Kalpana Mali</h4>
-                    </div>
-                    <div class="row span">
-                        <span>Contractor</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/92753'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
-                    </div>
-                    <div class="row">
-                        <h4>Vignesh Palanisamy</h4>
-                    </div>
-                    <div class="row span">
-                        <span>Contractor</span>
+                <div class="col-lg-3 col-sm-3">
+                    <div class="profile-box" onclick="window.open('https://www.comcastnow.com/profile/310061','_blank')">
+                        <div class="row">
+                            <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
+                        </div>
+                        <div class="row">
+                            <h4>Raj Vaishnavi</h4>
+                        </div>
+                        <div class="row span">
+                            <span>Contractor</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/368873'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
-                    </div>
-                    <div class="row">
-                        <h4>Vivek Pola</h4>
-                    </div>
-                    <div class="row span">
-                        <span>Contractor</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/372165'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
-                    </div>
-                    <div class="row">
-                        <h4>Rahul Prasad</h4>
-                    </div>
-                    <div class="row span">
-                        <span>Contractor</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/80122'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
-                    </div>
-                    <div class="row">
-                        <h4>Pragnesh Rabari</h4>
-                    </div>
-                    <div class="row span">
-                        <span>Senior QA Engineer</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/197921'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
-                    </div>
-                    <div class="row">
-                        <h4>Dave Reiff</h4>
-                    </div>
-                    <div class="row span">
-                        <span>Contractor</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/84951'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
-                    </div>
-                    <div class="row">
-                        <h4>Baljinder Singh</h4>
-                    </div>
-                    <div class="row span">
-                        <span>Contractor</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/86919'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
-                    </div>
-                    <div class="row">
-                        <h4>Nishant Sirohi</h4>
-                    </div>
-                    <div class="row span">
-                        <span>Contractor</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/85872'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
-                    </div>
-                    <div class="row">
-                        <h4>William Girtain</h4>
-                    </div>
-                    <div class="row span">
-                        <span>Contractor</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/10708'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
-                    </div>
-                    <div class="row">
-                        <h4>George Smith</h4>
-                    </div>
-                    <div class="row span">
-                        <span>Eng 5, Network Engineer</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/93942'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
-                    </div>
-                    <div class="row">
-                        <h4>Vishnu Subramanian</h4>
-                    </div>
-                    <div class="row span">
-                        <span>Contractor</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/46923'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url(https://www.comcastnow.com/profiletools/ProfilePicture.ashx?ID=Cable_dstech200);background-size:100px 100px;background-repeat:no-repeat; "></div>
-                    </div>
-                    <div class="row">
-                        <h4>Don Stecher</h4>
-                    </div>
-                    <div class="row span">
-                        <span>Technical Project Mgr 4, Project Mgmt</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/349478'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
-                    </div>
-                    <div class="row">
-                        <h4>Durgalakshmi Sundararaman</h4>
-                    </div>
-                    <div class="row span">
-                        <span>Contractor</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/90872'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
-                    </div>
-                    <div class="row">
-                        <h4>Pradeepkumar Thankappan</h4>
-                    </div>
-                    <div class="row span">
-                        <span>Contractor</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/310061'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
-                    </div>
-                    <div class="row">
-                        <h4>Raj Vaishnavi</h4>
-                    </div>
-                    <div class="row span">
-                        <span>Contractor</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/118063'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
-                    </div>
-                    <div class="row">
-                        <h4>
-                            Sundaravadivelu
-                            &nbsp&nbsp&nbsp vajravelu
-                        </h4>
-                    </div>
-                    <div class="row span">
-                        <span>Contractor</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/90232'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
-                    </div>
-                    <div class="row">
-                        <h4>Deepak Gurung</h4>
-                    </div>
-                    <div class="row span">
-                        <span>Contractor</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/90612'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
-                    </div>
-                    <div class="row">
-                        <h4>Keith Houser</h4>
-                    </div>
-                    <div class="row span">
-                        <span>Contractor</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-3">
-                <div class="profile-box" onclick="location.href = 'https://www.comcastnow.com/profile/91773'">
-                    <div class="row">
-                        <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
-                    </div>
-                    <div class="row">
-                        <h4>Suganya Jagadeesan</h4>
-                    </div>
-                    <div class="row span">
-                        <span>Contractor</span>
+                <div class="col-lg-3 col-sm-3">
+                    <div class="profile-box" onclick="window.open('https://www.comcastnow.com/profile/91773','_blank')">
+                        <div class="row">
+                            <div class="circluar-image col-md-3 col-md-offset-3" style="background-image: url('../../Content/Images/defaultProfile.png');background-size:100px 100px;background-repeat:no-repeat; "></div>
+                        </div>
+                        <div class="row">
+                            <h4>Suganya Jagadeesan</h4>
+                        </div>
+                        <div class="row span">
+                            <span>Contractor</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script>
+
+    $("#teamSelect").change(function () {
+
+        $("#hosteam").show();
+        $("#offshoreteam").show();
+        $("#videoprocteam").show();
+        $("#ciscoteam").show();
+        $("#oneteam").show();
+        $("#arristeam").show();
+
+        if ($(this).val() == "1") {
+            $("#hosteam").hide();
+            $("#offshoreteam").hide();
+            $("#videoprocteam").hide();
+            $("#ciscoteam").hide();
+            $("#oneteam").hide();
+            $("#arristeam").show();
+        }
+        if ($(this).val() == "2") {
+            $("#hosteam").hide();
+            $("#offshoreteam").hide();
+            $("#videoprocteam").hide();
+            $("#ciscoteam").hide();
+            $("#oneteam").show();
+            $("#arristeam").hide();
+        }
+        if ($(this).val() == "3") {
+            $("#hosteam").hide();
+            $("#offshoreteam").hide();
+            $("#videoprocteam").hide();
+            $("#ciscoteam").show();
+            $("#oneteam").hide();
+            $("#arristeam").hide();
+        }
+        if ($(this).val() == "4") {
+            $("#hosteam").show();
+            $("#offshoreteam").hide();
+            $("#videoprocteam").hide();
+            $("#ciscoteam").hide();
+            $("#oneteam").hide();
+            $("#arristeam").hide();
+        }
+        if ($(this).val() == "5") {
+            $("#hosteam").hide();
+            $("#offshoreteam").hide();
+            $("#videoprocteam").show();
+            $("#ciscoteam").hide();
+            $("#oneteam").hide();
+            $("#arristeam").hide();
+        }
+        if ($(this).val() == "6") {
+            $("#hosteam").hide();
+            $("#offshoreteam").show();
+            $("#videoprocteam").hide();
+            $("#ciscoteam").hide();
+            $("#oneteam").hide();
+            $("#arristeam").hide();
+        }
+    });
+
+
+
+</script>
 

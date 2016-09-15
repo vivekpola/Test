@@ -212,8 +212,9 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\defaultProfile.png" />
     <Content Include="Content\Images\idea.jpg" />
-    <Content Include="Content\Images\Picture1.png" />
+    <Content Include="Content\Images\teamdist.PNG" />
     <Content Include="Content\Images\vector.png" />
+    <Content Include="Content\w3.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -274,6 +275,7 @@
     <Content Include="Views\Home\TeamProfile.cshtml" />
     <Content Include="Views\Home\Tools.cshtml" />
     <Content Include="Views\Home\Innovation.cshtml" />
+    <Content Include="Views\Home\Environments.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

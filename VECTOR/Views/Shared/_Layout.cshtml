@@ -6,8 +6,7 @@
     <title>@ViewBag.Title - VECTOR</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
-    <style>
+     <style>
         .navbar-header {
             padding-left: 20% !important;
         }
@@ -19,30 +18,37 @@
         .active {
             background-color: #222222 !important;
         }
+        .container {
+        max-width:99%;
+        }
+        .row {
+        margin-left:unset;
+        margin-right:unset;
+        }
     </style>
-
+    
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top" style="font-size:16px;">
         <div class="container">
-            <div class="navbar-header">
+            <div>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
                 <img src="~/Content/Images/vector.png" alt="Picture" height="42" width="42" style="background-color:coral;float:left;margin: 4px 4px 0px 0px;" />
-                @Html.ActionLink("Video Engineering Certification Tooling Operations & Reporting (VECTOR)", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("VECTOR", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="@(ViewBag.Current == "Home" ? "active" : "")">@Html.ActionLink("Charter", "Index", "Home")</li>
                     <li class="@(ViewBag.Current == "TeamProfile" ? "active" : "")">@Html.ActionLink("Team", "TeamProfile", "Home")</li>
-                   
+                    <li class="@(ViewBag.Current == "Environments" ? "active" : "")">@Html.ActionLink("Environments", "Environments", "Home")</li>
                     <li class="@(ViewBag.Current == "ProjectStatus" ? "active" : "")">@Html.ActionLink("Projects", "ProjectStatus", "Home")</li>
                     <li class="@(ViewBag.Current == "Tools" ? "active" : "")">@Html.ActionLink("Tools", "Tools", "Home")</li>
-                    <li class="@(ViewBag.Current == "Innovation" ? "active" : "")">@Html.ActionLink("Innovate", "Innovation", "Home")</li>
-                    <li class="@(ViewBag.Current == "Contact" ? "active" : "")">@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li class="@(ViewBag.Current == "Innovation" ? "active" : "")">@Html.ActionLink("Innovation", "Innovation", "Home")</li>
+                    @*<li class="@(ViewBag.Current == "Contact" ? "active" : "")">@Html.ActionLink("Contact", "Contact", "Home")</li>*@
                     <li class="@(ViewBag.Current == "Documentation" ? "active" : "")">@Html.ActionLink("Documentation", "Documentation", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
@@ -52,13 +58,14 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
+        @*<footer>
             <p>&copy; @DateTime.Now.Year - VECTOR Application</p>
-        </footer>
+        </footer>*@
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+     @RenderSection("scripts", required: false)
 </body>
+
 </html>
